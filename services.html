@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(EV1.jpg) center/cover fixed;
+            font-family: Arial, sans-serif; /* Change font for better readability */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for navigation */
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure navigation stays above other content */
+            width: 100%;
+            border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+            opacity: 1;
+        }
+
+        .heading {
+            padding: 20px 0;
+            background: #072947;
+            color: #ffffff;
+            font-size: 45px;
+            text-align: center;
+            margin: 0;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+        }
+
+        .section {
+            position: absolute;
+            top:790px;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+        }
+
+        .hero-image {
+            background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */        
+            height: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 130px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 2); 
+            width: 990px;
+            left: 120px;
+        }
+
+        .hero-text {
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size:20px;
+            width:90%;
+           color: #040b0e;
+        }
+       
+        .hero-text h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+
+        .btn {
+            background-color: #501a0d;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #040b0e;
+        }
+        input,select{
+            height:40px;
+            width: 500px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .lables{
+            text-align:left;
+        }
+        .newevent{
+            text-align: left;
+        }
+        .submit{
+            width: 100px;
+        }
+        .submit{
+            background:blue;
+            color: white;
+            width: 135px;
+            height: 40px;
+            position:absolute;
+            left:380px;
+        }
+        .submit:hover{
+            background:red;
+            width:80px;
+            width: 140px;
+            height: 45px;
+            transition:0.7s;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        EVENT MANAGEMENT SYSTEM
+    </div>
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i>BACK</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></i>HOME</a>
+    </nav>
+    
+    <div class="container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h2>Services</h2>
+                <p>At our Event Management System, we offer a wide range of services to make your event planning experience seamless and enjoyable. Here are some of the key services we provide:</p>
+                <ul>
+                    <li>Event Booking: Easily book your event online through our user-friendly platform.</li>
+                    <li>Event Coordination: Our experienced team will handle all aspects of event coordination, from venue selection to logistics management.</li>
+                    <li>Theme Development: Let us bring your vision to life with custom theme development tailored to your event.</li>
+                    <li>Catering Services: Enjoy delicious catering options provided by our trusted partners.</li>
+                    <li>Entertainment Booking: From live bands to DJs, we'll help you find the perfect entertainment for your event.</li>
+                    <li>On-site Support: Our team will be on-site to ensure everything runs smoothly on the day of your event.</li>
+                </ul>
+                <p>Whether you're planning a wedding, corporate event, or private party, we have the expertise and resources to make it a success. Contact us today to learn more about our services and start planning your next event!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

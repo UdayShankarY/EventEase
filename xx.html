@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(EV1.jpg) center/cover fixed;
+            font-family: Arial, sans-serif; /* Change font for better readability */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for navigation */
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure navigation stays above other content */
+            width: 100%;
+            border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+            opacity: 1;
+        }
+
+        .heading {
+            padding: 20px 0;
+            background: #072947;
+            color: #ffffff;
+            font-size: 45px;
+            text-align: center;
+            margin: 0;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            position: absolute;
+            top:790px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+            left: 180px;
+        }
+        .section1 {
+            position: absolute;
+            top:1000px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+            left: 180px  ;
+        }
+
+        .section h2 {
+            color: #021626;
+        }
+
+        .section p {
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            background-image: url('bl.jpg');
+            height: 400px;
+            width: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 350px;
+            left: 70px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+        .hero-image:hover {
+            height: 410px;
+            width: 410px;
+            transition: 0.8s;
+            border-radius: 15px solid rgb(161, 25, 25);
+
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+
+
+        .hero-imaged {
+            background-image: url('bl.jpg');
+            height: 400px;
+            width: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 350px;
+            left: 560px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+        .hero-imaged:hover {
+            height: 410px;
+            width: 410px;
+            transition: 0.8s;
+            border-radius: 15px solid rgb(161, 25, 25);
+
+        }
+
+        .hero-textd {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+
+
+
+
+        .hero-imagee {
+            background-image: url('bl.jpg');
+            height: 400px;
+            width: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 350px;
+            left: 1050px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+        .hero-imagee:hover {
+            height: 410px;
+            width: 410px;
+            transition: 0.8s;
+            border-radius: 15px solid rgb(9, 218, 99);
+
+        }
+
+        .hero-texte {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+
+        .btn {
+            background-color: #501a0d;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #040b0e;
+        }
+        .getstarted{
+            background-color:rgb(231, 207, 28);
+            color: #000000;
+        }
+
+        footer {
+            position: absolute;
+            top:1200px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: #072947;
+            color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        footer:hover {
+
+            padding: 57px 0;
+            transition:  0.5s ;
+            height: 90px;
+
+
+        }
+
+        .footy{
+            background: #072947;
+            
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer h3 {
+            font-size: 24px;
+        }
+
+        .contact-info,
+        .quick-links,
+        .social-links {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .quick-links ul,
+        .social-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quick-links ul li,
+        .social-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .social-links ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links ul li:last-child {
+            margin-right: 0;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+        a{
+            color:#ffffff;
+    
+        }
+         img{
+           width:250px;
+        }
+
+        .full_bg{
+           background-color:021626;
+        }
+        .couple{
+            background-color:white;
+            opacity: 0.9;
+        }
+    .container12 {
+        /* Update positioning to display side by side */
+        position: absolute;
+        top: 50%;
+        left: 50%; /* Adjust as needed */
+        transform: translate(-50%, -50%);
+        background-color: rgb(16, 92, 139);
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        height: 400px;
+        width: 400px;
+    }
+    .container12:hover{
+      height: 405px;
+        width: 405px;
+      transition:0.4s;
+    }
+
+    .container13 {
+        /* Update positioning to display side by side */
+        position: absolute;
+        top: 50%;
+        left: 120%; /* Adjust as needed */
+        transform: translate(-50%, -50%);
+        background-color: rgb(22, 159, 81);
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        height: 400px;
+        width: 400px;
+    }
+    .container13:hover{
+      height: 405px;
+        width: 405px;
+        transition:0.4s;
+
+
+    }
+
+    #btn,#btn1{
+  
+
+        background-color: rgb(133, 17, 17);
+        height:50px;
+        width:90px;
+        font-size: 20px;
+
+    }
+    
+    
+#adminfa{
+        font-size: 190px; /* Adjust the font size as needed */
+        color:red;
+    }
+    #userfa {
+        font-size: 190px; /* Adjust the font size as needed */
+        color:rgb(13, 55, 75);
+    }
+
+    .name{
+
+        color:white;
+    }
+ 
+    .inner_page .full_bg {
+   background: #1B4C71;
+   height:140px;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="heading">
+        EVENT <br>MANAGEMENT SYSTEM
+    </div>
+    <nav>
+        <a href="adminlogin.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;BACK</a>
+        <a href="event.html"><i class="fa-regular fa-calendar-days"></i>&nbsp;EVENTS</a>
+        <a href="conven.html"><i class="fa-solid fa-people-roof"></i>&nbsp;COVENTIONAL HALL</a>
+        <a href="gallery.html"><i class="fa-solid fa-image"></i>&nbsp;GALLERY</a>
+       
+
+    </nav>
+    <div class="container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h2>EVENT MANAGEMENT </h2>
+                <p>Book, organize, and manage your events in our software seamlessly</p>
+                <br>
+                <button class="getstarted"><a class="getstarted" href="event.html">Get Started</a></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-imaged">
+                <div class="hero-textd">
+                    <h2>CONVENTIONAL HALL MANAGEMENT </h2>
+                    <p>Book, organize, and manage your Conventional halls seamlessly</p>
+                    <br>
+                    <button class="getstarted"><a class="getstarted" href="conven.html">Get Started</a></button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="hero-imagee">
+                    <div class="hero-texte">
+                        <h1>GALLERY  </h1>
+                        <p>experience , visualize Our events Gallery</p>
+                        <br>
+                        <button class="getstarted"><a class="getstarted" href="gallery.html">Get Started</a></button>
+                    </div>
+                </div>
+    
+                <div class="section">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor ut nisi in luctus. Donec finibus consectetur justo, eu sodales tortor sodales vitae.</p>
+                </div>
+        
+                <div class="section1">
+                    <h2>Services</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor ut nisi in luctus. Donec finibus consectetur justo, eu sodales tortor sodales vitae.</p>
+                </div>
+                
+                <footer>
+                    <div class="footy">
+                    <div class="footer">
+                        <div class="footer-content">
+                            <div class="contact-info">
+                                <h3>Contact Us</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ut consequatur libero, accusantium esse aliquam incidunt iusto excepturi magnam illo, harum exercitationem?</p>
+                            </div>
+                            <div class="quick-links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                  
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="social-links">
+                                <h3>Follow Us</h3>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </footer>
+
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your custom CSS styles here */
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(loginimg.jpg) center/cover fixed;
+            font-family: Arial, sans-serif; /* Change font for better readability */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+
+        }
+
+        nav {
+            background-color: 021626; /* Semi-transparent background for navigation */
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure navigation stays above other content */
+            width: 100%;
+            border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+            opacity: 1;
+            margin-left: 10%;
+        }
+  p{
+    font-size:20px;
+  }
+        
+
+
+        .heading {
+            padding: 02px 0;
+            width:100%;
+            background: #1B4C71;
+            color: #ffffff;
+            font-size: 40px;
+            text-align: center;
+            margin: 0;
+            font-family: 'Times New Roman';
+        }
+
+        .heading:hover {
+            font-size: 47px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #ffffff;
+            text-align: center;
+            padding: 0px 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(117, 112, 112, 0.2); /* Semi-transparent background on hover */
+            border-radius: 5px;
+            color: #d1b113;
+
+        }
+
+
+        /* Hero Section Styles */
+        .container {
+    width: 45%; /* Adjust the width of each container as needed */
+    display: inline-block; /* Display containers side by side */
+    vertical-align: top; /* Align containers to the top */
+    margin: 0 2.5%; /* Adjust margin between containers */
+    box-sizing: border-box; /* Include padding and border in the width */
+    background-position: center;
+
+}
+
+.hero-text {
+    background: url('bl.jpg');
+    height: 300px;
+    width: 320px; /* Make the image container take up full width */
+    padding: 40px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 100px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: height 0.8s, opacity 0.8s, border-radius 0.8s;
+    left:240px;
+    color:white;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.hero-image {
+    background: url('bl.jpg');
+    height: 300px;
+    width: 320px; /* Make the image container take up full width */
+    padding: 40px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 100px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: height 0.8s, opacity 0.8s, border-radius 0.8s;
+    left:160px;
+    color:white;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    text-align: center;
+
+
+}
+
+.getstarted{
+    color:rgb(255, 255, 255);
+    background-color: #d11313;
+    width:100px;
+    height:40px;
+}
+
+
+
+
+
+        /* Section Styles */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+
+        /* Footer Styles */
+        footer {
+            position: absolute;
+            top:800px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 190px;
+            background: #021626;
+            color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+     
+        .footy{
+            background: #021626;
+            
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .footer h3 {
+            font-size: 24px;
+        }
+        
+
+        .xx-info,
+        .quick-links,
+        .social-links {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .xx-info .quick-links ul,
+        .social-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .xx-info .quick-links ul li,
+        .social-links ul li {
+            margin-bottom: 10px;
+            font-size:20px;
+        }
+
+        .social-links ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links ul li:last-child {
+            margin-right: 0;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+        a{
+            color:#ffffff;
+    
+        }
+     
+        .logof img {
+    width: 250px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    float: left; /* Align the image to the left */
+}
+
+body {
+    margin: 0;  
+    padding: 0;
+    background: url(loginimg.jpg) center/cover fixed;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+   .last{
+    font-size:25px;
+   }
+      
+
+        a {
+            color: #ffffff;
+            text-decoration: none; /* Remove underline */
+        }
+       
+      
+       
+
+       
+    
+        .logoimg{
+            width: 250px; /* Adjust to desired width */
+            height: auto;   
+            margin-top:2%;
+        }
+
+        .header {
+    padding: 35px 20px;
+    background: #021626;
+    color: #f1f1f1;
+    width: 100%;
+    z-index: 9999999;
+    height: 10px;
+    box-shadow: 0px 0px 8px 0px #fbc50a;
+    
+}
+
+    .inner_page .header {
+    box-shadow: 0px 0px 20px 0px #fbc50a;
+    margin-bottom: 10px;
+    width:100%;
+}
+h1{
+    font-family:monospace;
+}
+
+    </style>
+</head>
+<body>
+    <form method="post" action="adminlogi.PHP">
+        <div class="inner_page">
+
+    <div class="heading">
+         <div class="logo">
+        <a href="index.html"><img src="logofinal.png" class="logoimg" alt="#" /></a>
+     </div>
+    </div>
+</div>
+
+    <div class="header">
+    <nav>
+        <a href="adminlogin.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;Back</a>
+
+        <a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+        <a href="about.html"><i class="fa-solid fa-question"></i>&nbsp;About</a>
+        <a href="contact.html"><i class="fa-solid fa-phone"></i>&nbsp;Contact Us</a>
+        &nbsp;       
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+      
+        <a href="#"><i class="fa-solid fa-search"></i>&nbsp;</a>
+
+        <a href="getstarted.html"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Login</a>
+    
+
+       
+    
+
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="hero-text">
+            <h2>Event<br> Management  </h2>
+            <p>Book, organize, and manage your events in our software seamlessly</p>
+            <br>
+            <button class="getstarted"><a class="getstarted" href="event.html">Get Started</a></button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="hero-image">
+            <h2>Conventional Hall Management </h2>
+            
+
+            <p>Book, organize, and manage your Conventional halls seamlessly</p>
+            <br>
+            <button class="getstarted"><a class="getstarted" href="conven.html">Get Started</a></button>
+        </div>
+    </div>
+       
+        
+    </div>
+    <footer>
+        <div class="footy">
+        <div class="footer">
+            <div class="footer-content">
+               
+
+                <div class="xx-info">
+                    <a class="logof" href="index.html"><img src="logoxx.png" alt="#"/></a> 
+
+                    <h3>Information</h3>
+                    <ul>
+                        <li>There are many</li>
+                        <li>variations of pas</li>
+                        <li>sages of Lorem</li>
+                        <li>psum available,</li>
+                        <li>but the majority</li>
+                    </ul>
+                </div>
+                
+
+                <div class="quick-links">
+                    <br>
+                <br>
+                <br>
+                <br>
+            
+                    <h3>Our Weddings</h3>
+                <ul>
+                    <li>There are many</li>
+                    <li>variations of pas</li>
+                    <li>sages of Lorem</li>
+                    <li>psum available,</li>
+                    <li>but the majority</li>
+                </ul>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="last">
+        <p>© 2024 All Rights Reserved. <a href="https://html.design/"> Event management System</a></p>
+<br>
+</div>
+    </div>
+    </footer>   
+</body>
+</html>

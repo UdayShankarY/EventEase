@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(loginimg.jpg) center/cover fixed;
+            font-family: Arial, sans-serif; /* Change font for better readability */
+        }
+
+        nav {
+            background-color: 021626; /* Semi-transparent background for navigation */
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure navigation stays above other content */
+            width: 100%;
+            border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+            opacity: 1;
+            margin-left: 10%;
+        }
+
+        .heading {
+            padding: 02px 0;
+            background: #1B4C71;
+            color: #ffffff;
+            font-size: 45px;
+            text-align: center;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .logoimg{
+            width: 250px; /* Adjust to desired width */
+            height: auto;   
+            margin-top:2%;
+        }
+        .header {
+            padding: 40px 16px;
+            background: #021626;
+            color: #f1f1f1;
+            width: 100%;
+            z-index: 9999999;
+            height: 30px;
+        }
+
+        .inner_page .header {
+            box-shadow: 0px 0px 20px 0px #fbc50a;
+            margin-bottom: 10px;
+        }
+
+        .heading:hover{
+            font-size: 45px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(117, 112, 112, 0.2); /* Semi-transparent background on hover */
+            border-radius: 5px;
+            color: #d1b113;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .login-container {
+            width: 600px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+            background-image:url("bl.jpg");
+            opacity: 0.9;
+            border-radius: 20px;
+            height: 355px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: white;   
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border: 1px solid black(0.2, 5, 0.2, 0.1);
+            border-radius: 10px;
+            margin-left: -5px;
+            height: 25px;
+        }
+
+        button {
+            width: 60%;
+            padding: 10px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 120px;
+            margin-top: 30px;
+        }
+
+        button:hover {
+            width: 63%;
+            transition: 0.7s;
+            background:red;
+        }
+
+        .lables {
+            text-align:left;
+            color: #ffffff;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border: 1px solid black(0.2, 5, 0.2, 0.1);
+            border-radius: 10px;
+            margin-left: -5px;
+            height: 25px;
+        }
+
+        input:hover,
+        select:hover {
+            height:30px;
+            width: 101%;
+            transition:0.7s;
+            border-radius: 13px;
+        }
+
+        footer {
+            position: absolute;
+            top:1200px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 190px;
+            background: #021626;
+            color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        footer:hover {
+            padding: 70px 0;
+            transition:  0.7s ;
+            height: 90px;
+        }
+
+        .footy {
+            background: #021626;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer h3 {
+            font-size: 24px;
+        }
+
+        .contact-info,
+        .quick-links,
+        .social-links {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .quick-links ul,
+        .social-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quick-links ul li,
+        .social-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .social-links ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links ul li:last-child {
+            margin-right: 0;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+        a {
+            color:#ffffff;
+        }
+        .logof {
+            width: 80px;
+            height: 80px;
+        }     
+    </style>
+</head>
+<body>
+    <form method="post" action="adminlogi.PHP">
+        <div class="inner_page">
+            <div class="heading">
+                 <div class="logo">
+                    <a href="index.html"><img src="logofinal.png" class="logoimg" alt="#" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <nav>
+                <a href="getstarted.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;Back</a>
+                <a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+                <a href="about.html"><i class="fa-solid fa-question"></i>&nbsp;About</a>
